@@ -1,0 +1,12 @@
+tests
+src
+docs
+tools
+.coverage
+.babelrc
+.codeclimate.yml
+.eslintrc
+.jscsrc
+.npmignore
+.nyc_output
+.travis.yml

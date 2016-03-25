@@ -1,0 +1,18 @@
+language: node_js
+notifications:
+  email: false
+node_js:
+  - '5'
+cache:
+  directories:
+    - node_modules
+after_success:
+  - 'npm run deploy:coverage'
+deploy:
+  provider: npm
+  email: aniquilatorbloody@gmail.com
+  'on':
+    branch: master
+    tags: true
+  api_key:
+    - secure: syU26swtZSmCGwBVhBv+NN1XZQqXP76POxjbNJcMAwxAFydm4hYv7HM2c0q19/H0keSdWLJxy/Eywgh+9JoteSbA+mDKo7OhnyBxPTNohcGRnpYBVIWl5mfKlQpnfbM83dD03oz7SLI9c82qlQddipZp0YhVzBby7NYvo9VNfyEi4ulclo646kTrelRYhJDs+PEdEDC72w8rkq61y4rmiFHIP7Ump3uJeNqIxvjlkLYBm49XbYOk1FgW6DQS9DOp66lCY+a8aW3ZzYxKIkGYcfSLzRY+WMdEiT372BgIxKO6s1w8nyNh54q8DrXl30coZYqpx7SLQMKfI2EBhmDJOxraKV3P3bzbaeY/MOJvDSViFY7H00udNMEuYr76/rQX5CtGibU1/efmZ9rwVWhymHUgTEG+zVZLzdtQTMIHi/QMBEmnnoedwvdNU1qkGpZbrpbu2IqN6pBbSa+WTQzw8XPE+XPgrV+uk7k1kFM+PvGVANC1/sPyjsosX/vrwya9mFwPReWnFLJgCMSCmqUU/U1xoac15cUCiI+4NlSBwaWXjjb+xmMoV/M8Y9Z2IFj1flWAjfO0TrLoyWFaCHrkKTh2n5r6WWcrx4v9R3eEl+L+E05f2hT8uaA3PIqfO5chr5wZTXJ3tiAXN5R8Ex22N2Td//sYjsABxF/UEkwu4MM=
