@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/cantidio/node-tree-flatten/issues"
   },
-  "main": "build/lib/index.js",
+  "main": "build/index.js",
   "scripts": {
     "clean": "rimraf build .coverage .nyc_output",
     "build": "npm run clean && babel ./src -d build",
